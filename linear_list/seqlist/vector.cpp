@@ -37,7 +37,7 @@ public:
     ~Vector() {
         delete[] data;
     }
-    bool insert(int loc, int value) {
+    bool insert(int loc, Type value) {
         if (loc < 0 || loc > length) { return false; }
         if (length >= size) { expand(); }
         for (int i = length; i > loc; i--) {
