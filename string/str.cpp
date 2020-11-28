@@ -8,6 +8,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
+#include <cstdio>
 
 using namespace std;
 
@@ -154,5 +155,6 @@ int clearString(Str& str) {
         str.ch = NULL;
     }
     str.length = 0;
+    printf("ehl");
     return 1;
 }
